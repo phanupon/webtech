@@ -14,14 +14,14 @@
     <hr> 
 
 <?php
-ob_start();
-include "adminpwd.php";
-$aduser2 = $_COOKIE["aduser"];
-if(strcmp($adpasswd, $aduser2) != 0){
-echo $_COOKIE["aduser"];    
-echo "<meta http-equiv=\"refresh\" content=\"5;URL=login.php\">";    
+//ob_start();
+//include "adminpwd.php";
+//$aduser2 = $_COOKIE["aduser"];
+//if(strcmp($adpasswd, $aduser2) != 0){
+//echo $_COOKIE["aduser"];    
+//echo "<meta http-equiv=\"refresh\" content=\"5;URL=login.php\">";    
     
-}
+//}
 
 //ส่วนแสดงผล
 include 'dbconn.php';
