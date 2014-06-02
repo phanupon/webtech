@@ -19,7 +19,7 @@ include "adminpwd.php";
 $aduser2 = $_COOKIE["aduser"];
 if(strcmp($adpasswd, $aduser2) != 0){
 echo $_COOKIE["aduser"];    
-echo "<meta http-equiv=\"refresh\" content=\"0;URL=login.php\">";    
+echo "<meta http-equiv=\"refresh\" content=\"5;URL=login.php\">";    
     
 }
 
