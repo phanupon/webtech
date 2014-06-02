@@ -5,13 +5,8 @@
     <body>
 <?php
 
-$host = "localhost";
-$user = "root";
-$password = "";
-$conn = mysql_connect($host, $user, $password);
 
-$sql = "USE mydata;";
-
+include 'dbconn.php';
 $result = mysql_query($sql);
 $name = $_POST['name'];
 $lastname = $_POST['lastname'];
