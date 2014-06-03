@@ -6,6 +6,7 @@
         <?php ob_start();
         $send = $_POST['send'];
         if(!$send){?>
+        <hr><br>
         <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
             username :<input type="text" name="user" size="25"><br>
             password :<input type="password" name="passwd" size="25"><br>
