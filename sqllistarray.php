@@ -1,4 +1,12 @@
-
+<?php
+ob_start();
+include "adminpwd.php";
+$aduser2 = $_COOKIE["adpasswd"];
+if(strcmp($adpasswd, $aduser2) != 0){
+echo $_COOKIE["adpasswd"];    
+echo "<meta http-equiv=\"refresh\" content=\"0;URL=login.php\">";        
+}
+?>
 <html>
 <head>
 <meta charset="utf-8"> 
@@ -14,15 +22,6 @@
     <hr> 
 
 <?php
-//ob_start();
-//include "adminpwd.php";
-//$aduser2 = $_COOKIE["aduser"];
-//if(strcmp($adpasswd, $aduser2) != 0){
-//echo $_COOKIE["aduser"];    
-//echo "<meta http-equiv=\"refresh\" content=\"5;URL=login.php\">";    
-    
-//}
-
 //ส่วนแสดงผล
 include 'dbconn.php';
 mysql_query("SET NAMES utf8");
