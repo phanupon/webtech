@@ -1,7 +1,4 @@
 <?php
-//$host = "localhost";
-//$OPENSHIFT_MYSQL_DB_PORT = "3306";
-//$OPENSHIFT_MYSQL_DB_HOST = "127.12.70.2";
 $host = "localhost";
 $user = "root";
 $pass = "";
